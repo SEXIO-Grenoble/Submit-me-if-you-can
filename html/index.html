@@ -1,0 +1,103 @@
+<!-- ==============================================================================================================================
+		Fichier				: index.html
+		Objectif(s)			: Le code html de la page du site.
+		Auteur 				: Equipe SEXIO
+		Date de création		: 01 décembre 2022
+=============================================================================================================================-->
+
+<!DOCTYPE html>
+<html lang = "fr">
+
+<!-- ============================================================================================================================
+     Entête de la page
+     ============================================================================================================================ -->
+<head>
+<!-- ============================================================================================================================
+	 Encodage des caractères
+	 ============================================================================================================================ -->
+	<meta charset = "utf-8" />
+	
+<!-- ============================================================================================================================
+	 Onglet du navigateur (image et titre)
+	 ============================================================================================================================ -->
+	<link rel = "icon" href = "../picture/logoViveris2.png"/>
+	<title> Submit me if you can ! </title>
+
+<!-- ============================================================================================================================
+	 Feuilles de style CSS
+	 ============================================================================================================================ -->
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/configuration.css">
+	<link rel="stylesheet" href="../css/form.css">
+	
+	<!-- ============================================================================================================================
+	 Feuilles javaScript
+	 ============================================================================================================================ -->
+<!-- 	<link rel="stylesheet" href="../js/index.js" /> -->
+	<script src="../js/index.js"></script>
+	<script src="../js/configuration.js"></script>
+	
+	
+</head>
+
+<body>
+	<div id=formulaire>
+		<form action="drole-de-formulaire" method="post">
+			<fieldset>
+				<div class = "label">
+					<div class = "col-30">
+	<!-- prénom -->
+						<label for="name">Nom :</label>
+					</div>
+					<div class = "col-65">
+						<input type="text" id="in" name="user_name" onkeypress = "return validerCaractere(window.event.which);">
+					</div>
+				</div>
+				
+				<div class = "label">
+					<div class = "col-30">
+	<!--  Nom -->
+						<label for="firstName">Prénom :</label>
+					</div>
+					<div class = "col-65">
+						<input type="text" id="in" name="firstName" onkeypress = "return validerCaractere(window.event.which);">
+					</div>
+				</div>
+				
+				<div class = "label">    
+					<div class = "col-30">
+						<label for="dayOfBirthday">Date de naissance :</label>
+					</div>
+					<div class = "col-65">
+						<input type="date" id="in"  min="1900-01-01" >
+					</div>
+				</div>
+				 <div class = "label">  	
+					<div class = "col-30">
+	<!-- mail -->
+						<label for="mail">Mail : </label>
+					</div>
+					<div class = "col-65">
+						<input id="in" name="mail" />
+					</div>
+				</div>
+			 	<div class = "label">  	
+					<div class = "col-30">
+						<label for="phone">Téléphone : </label>  
+					</div>
+					<div class = "col-65">
+						<input id="button" name="phone" />
+					</div>
+				</div>
+				<div class = "bouton">
+	<!-- bouton envoyer -->
+					<button type = "button" onclick="getValue();" >Envoyer le formulaire</button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+<!-- zone d'erreur -->
+</body>
+</html>
+
+

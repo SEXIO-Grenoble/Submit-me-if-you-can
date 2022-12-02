@@ -1,0 +1,77 @@
+/** =============================================================================================================================
+ * Fichier				: index.css
+ * Objectif(s)			: Mise en forme générale de la page d'accueil du site
+ * Auteur 				: Equipe SEXIO
+ * Date de création		: 01 décembre 2022
+ * ==============================================================================================================================
+ */
+body{
+ 	font-family: sans-serif;
+ 	background-color: #5F9EA0 ;
+	margin : 0;
+	padding: 0;
+	font-size: 17px;
+}
+
+div.formulaire{
+	margin : 10px;
+}
+
+fieldset {
+	background-color: #A9A9A9;
+	margin : 0;
+	width : 50%;
+	padding : 5px;
+	border : 3px solid #ccc;
+	border-radius: 8px;
+}
+
+div.label{
+	height: auto;
+	width:96%;
+	background-color: #ccc;
+	border: 1px solid #000000;
+	border-radius: 6px;
+	margin : 3px;
+	display: table;
+}
+
+div.col-30{
+	width: 30%;
+	height: 19px;
+	float: left;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	border-radius: 6px 0 0 6px;
+}
+
+div.col-65{
+	width: 65%;
+	float: right;
+	height: 25px;
+	display: block;
+	border-left: 1px solid #000000;
+}
+
+input {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	display: block;
+	border-radius: 0 6px 6px 0;
+	text-align: center;
+}
+
+div.bouton{
+	width: 100px;
+	border-radius: 6px;
+}
+
+button{
+	border-radius: 6px;
+	margin-left: 3px;
+	border : 1px solid #000000;
+}
